@@ -1,0 +1,23 @@
+{
+  "id": "usuario-ana-demonstracao",
+  "nome": "Ana de Teste",
+  "telefone": "81999990001",
+  "email": "ana@example.test",
+  "campanhas": {
+    "permitidas": false,
+    "registradoEm": "2026-10-01T13:00:00.000Z",
+    "versaoAviso": "campanhas-2026-10"
+  },
+  "credencial": {
+    "algoritmo": "PBKDF2",
+    "hash": "SHA-256",
+    "iteracoes": 600000,
+    "sal": [
+      140, 92, 10, 88, 32, 138, 100, 216, 202, 26, 180, 143, 195, 237, 62, 225
+    ],
+    "verificador": [
+      173, 170, 111, 85, 166, 145, 164, 183, 142, 140, 238, 208, 82, 70, 91, 9,
+      182, 246, 238, 87, 90, 126, 40, 177, 160, 253, 95, 254, 191, 162, 195, 234
+    ]
+  }
+}

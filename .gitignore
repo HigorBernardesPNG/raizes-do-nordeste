@@ -1,0 +1,10 @@
+node_modules/
+distribuicao/
+relatorios/
+.vercel/
+test-results/
+*.log
+.DS_Store
+Thumbs.db
+.env*
+!.env.exemplo

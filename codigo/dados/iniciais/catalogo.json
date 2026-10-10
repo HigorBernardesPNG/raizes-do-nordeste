@@ -1,0 +1,118 @@
+{
+  "unidades": [
+    {
+      "id": "recife-boa-vista",
+      "nome": "Boa Vista",
+      "cidade": "Recife",
+      "uf": "PE",
+      "aberta": true,
+      "horario": "Todos os dias, das 7h às 18h",
+      "produtos": [
+        {
+          "id": "cuscuz-recheado",
+          "nome": "Cuscuz recheado",
+          "descricao": "Queijo coalho e manteiga de garrafa.",
+          "categoria": "Cuscuz",
+          "precoCentavos": 2000,
+          "disponivel": true,
+          "estoque": 3
+        },
+        {
+          "id": "tapioca-queijo",
+          "nome": "Tapioca de queijo",
+          "descricao": "Tapioca com queijo coalho.",
+          "categoria": "Tapiocas",
+          "precoCentavos": 1500,
+          "disponivel": true,
+          "estoque": 5
+        },
+        {
+          "id": "bolo-macaxeira",
+          "nome": "Bolo de macaxeira",
+          "descricao": "Fatia de bolo de macaxeira.",
+          "categoria": "Bolos",
+          "precoCentavos": 650,
+          "disponivel": false,
+          "estoque": 0
+        }
+      ],
+      "endereco": "Rua de Exemplo, 100"
+    },
+    {
+      "id": "recife-casa-amarela",
+      "nome": "Casa Amarela",
+      "cidade": "Recife",
+      "uf": "PE",
+      "aberta": false,
+      "horario": "Todos os dias, das 7h às 18h",
+      "produtos": [
+        {
+          "id": "cuscuz-recheado",
+          "nome": "Cuscuz recheado",
+          "descricao": "Queijo coalho, manteiga de garrafa e coentro.",
+          "categoria": "Cuscuz",
+          "precoCentavos": 2200,
+          "disponivel": true,
+          "estoque": 2
+        },
+        {
+          "id": "tapioca-queijo",
+          "nome": "Tapioca de queijo",
+          "descricao": "Tapioca com queijo coalho.",
+          "categoria": "Tapiocas",
+          "precoCentavos": 1500,
+          "disponivel": false,
+          "estoque": 0
+        },
+        {
+          "id": "bolo-macaxeira",
+          "nome": "Bolo de macaxeira",
+          "descricao": "Fatia de bolo de macaxeira.",
+          "categoria": "Bolos",
+          "precoCentavos": 650,
+          "disponivel": true,
+          "estoque": 4
+        }
+      ],
+      "endereco": "Rua de Exemplo, 200"
+    },
+    {
+      "id": "joao-pessoa-centro",
+      "nome": "Centro",
+      "cidade": "João Pessoa",
+      "uf": "PB",
+      "aberta": true,
+      "horario": "Todos os dias, das 7h às 18h",
+      "produtos": [
+        {
+          "id": "cuscuz-recheado",
+          "nome": "Cuscuz recheado",
+          "descricao": "Queijo coalho e manteiga de garrafa.",
+          "categoria": "Cuscuz",
+          "precoCentavos": 2100,
+          "disponivel": true,
+          "estoque": 3
+        },
+        {
+          "id": "tapioca-queijo",
+          "nome": "Tapioca de queijo",
+          "descricao": "Tapioca com queijo coalho.",
+          "categoria": "Tapiocas",
+          "precoCentavos": 1500,
+          "disponivel": true,
+          "estoque": 5
+        },
+        {
+          "id": "bolo-macaxeira",
+          "nome": "Bolo de macaxeira",
+          "descricao": "Fatia de bolo de macaxeira.",
+          "categoria": "Bolos",
+          "precoCentavos": 650,
+          "disponivel": false,
+          "estoque": 0
+        }
+      ],
+      "endereco": "Rua de Exemplo, 300"
+    }
+  ]
+}

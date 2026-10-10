@@ -1,0 +1,270 @@
+@use "variaveis" as v;
+
+.formulario-acesso {
+  display: grid;
+  gap: 12px;
+  margin: 20px 0;
+}
+.formulario-acesso .botao {
+  justify-self: start;
+}
+.escolha-campanhas {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.escolha-campanhas input {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+}
+.credenciais-teste,
+.painel p {
+  overflow-wrap: anywhere;
+}
+.painel > .botao {
+  margin: 4px 8px 4px 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+input,
+textarea {
+  font: inherit;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid v.$marrom;
+  border-radius: 6px;
+  padding: 10px;
+  background: white;
+  color: v.$carvao;
+}
+input[type="number"] {
+  max-width: 120px;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+.cabecalho nav,
+.acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.formulario-item {
+  display: grid;
+  gap: 8px;
+  max-width: 600px;
+  margin: 16px 0;
+}
+.formulario-item .botao {
+  justify-self: start;
+}
+.retorno-formulario:empty {
+  display: none;
+}
+.item-sacola {
+  background: white;
+  border: 1px solid v.$borda;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+}
+.aviso,
+.aviso-global {
+  padding: 16px;
+  background: #fff0d8;
+  border: 1px solid v.$marrom;
+  border-radius: 8px;
+}
+.aviso-global {
+  max-width: 1080px;
+  margin: 20px;
+}
+.aviso button {
+  margin: 4px;
+}
+.subtotal {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 24px;
+}
+.revisao-unidade {
+  margin: 24px 0;
+}
+.diferenca-unidade {
+  border-bottom: 1px solid v.$borda;
+  padding: 12px 0;
+}
+.diferenca-unidade p,
+.item-sacola p {
+  overflow-wrap: anywhere;
+}
+
+.botao {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 46px;
+  padding: 8px 16px;
+  border: 1px solid v.$terracota;
+  border-radius: 10px;
+  background: v.$terracota;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+.botao--secundario {
+  background: white;
+  color: v.$terracota;
+}
+.unidade {
+  padding: 16px 20px;
+  background: white;
+  border: 1px solid v.$borda;
+  border-radius: 12px;
+}
+.unidade p {
+  margin: 4px 0 0;
+  color: v.$marrom;
+}
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 24px 0 12px;
+}
+.filtro {
+  min-height: 44px;
+  padding: 8px 20px;
+  border: 1px solid transparent;
+  border-radius: 24px;
+  background: transparent;
+  color: v.$marrom;
+}
+.filtro[aria-pressed="true"] {
+  background: v.$terracota;
+  color: white;
+}
+.lista-produtos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.produto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  border: 1px solid v.$borda;
+  border-radius: 12px;
+  background: white;
+}
+.produto h2 {
+  margin: 4px 0 8px;
+}
+.categoria {
+  color: v.$verde;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+.preco {
+  display: block;
+  font-size: 1.5rem;
+  margin: auto 0 16px;
+}
+.indisponivel {
+  font-weight: 600;
+  color: v.$marrom;
+  margin: 0;
+}
+@media (min-width: 700px) {
+  .lista-produtos {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.formulario-finalizacao,
+.campo-finalizacao {
+  display: grid;
+  gap: 8px;
+}
+.formulario-finalizacao {
+  margin-top: 24px;
+  gap: 16px;
+}
+.formulario-finalizacao fieldset {
+  min-width: 0;
+  border: 1px solid v.$borda;
+  padding: 16px;
+  border-radius: 8px;
+}
+.formulario-finalizacao legend {
+  font-weight: 600;
+}
+.formulario-finalizacao .escolha-campanhas {
+  margin: 12px 0;
+}
+.formulario-finalizacao input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+}
+.formulario-finalizacao .botao {
+  justify-self: start;
+}
+.erro-campo {
+  margin: 0;
+  color: #8c241c;
+}
+.erro-campo:empty {
+  display: none;
+}
+[aria-invalid="true"] {
+  border: 2px solid #8c241c;
+}
+.convite-conta {
+  margin: 24px 0;
+  padding: 16px;
+  background: #fff8ee;
+  border-radius: 8px;
+}
+.convite-conta .botao,
+.revisao-compra .botao {
+  margin: 4px;
+}
+
+// O mesmo percurso ganha alvos maiores no totem, sem criar uma segunda aplicação.
+.pagamento {
+  margin-block: 1.5rem;
+  border-top: 1px solid #ded3c6;
+  padding-top: 1rem;
+}
+select {
+  font: inherit;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #655b52;
+  border-radius: 0.4rem;
+  background: #fff8ee;
+  color: #2e2925;
+}
+.painel > .botao {
+  margin: 0.4rem 0.4rem 0.4rem 0;
+}
+.modo-totem .botao,
+.modo-totem nav a {
+  min-height: 48px;
+}
+.encerrar-totem {
+  margin: 1rem auto;
+  display: block;
+}
+.encerrar-totem[hidden] {
+  display: none;
+}

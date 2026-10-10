@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FFF8EE" />
+    <meta
+      name="description"
+      content="Cardápio demonstrativo da Raízes do Nordeste."
+    />
+    <title>Raízes do Nordeste</title>
+  </head>
+  <body>
+    <a class="pular-conteudo" href="#conteudo-principal"
+      >Pular para o conteúdo</a
+    >
+    <header class="cabecalho">
+      <a class="marca" href="#/cardapio">Raízes do Nordeste</a>
+      <nav aria-label="Navegação principal">
+        <a href="#/cardapio">Cardápio</a>
+        <a href="#/acompanhamento">Pedido</a>
+        <a href="#/fidelidade">Fidelidade</a>
+        <a href="#/sacola" id="acesso-sacola">Sacola (0)</a>
+        <a href="#/entrar" id="acesso-conta">Entrar</a>
+        <button
+          id="sair-conta"
+          type="button"
+          class="botao botao--secundario"
+          hidden
+        >
+          Sair
+        </button>
+      </nav>
+    </header>
+    <div
+      id="aviso-armazenamento"
+      class="aviso-global"
+      role="alert"
+      hidden
+    ></div>
+    <div id="aviso-conta" class="aviso-global" role="alert" hidden></div>
+    <div id="aviso-inatividade" class="aviso-global" role="status" hidden>
+      <p>
+        A sessão chegou a 19 minutos sem atividade e será encerrada aos 20
+        minutos.
+      </p>
+      <button id="continuar-sessao" type="button" class="botao">
+        Continuar sessão
+      </button>
+    </div>
+    <button
+      id="encerrar-totem"
+      class="botao encerrar-totem"
+      type="button"
+      hidden
+    >
+      Encerrar atendimento
+    </button>
+    <main id="conteudo-principal" class="conteudo" tabindex="-1"></main>
+    <footer class="rodape">
+      <p>Ambiente de demonstração · dados fictícios</p>
+      <a href="#/privacidade">Privacidade e dados</a>
+      <a href="#/demonstracao">Demonstração</a>
+    </footer>
+    <noscript
+      >Ative o JavaScript no navegador para consultar este cardápio.</noscript
+    >
+    <script type="module" src="/codigo/aplicacao/iniciar.js"></script>
+  </body>
+</html>
