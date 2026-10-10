@@ -60,10 +60,6 @@ npm run test:navegacao
 
 O teste de navegação depende da compilação. Para visualizar o resultado compilado, executar `npm run preview`. A saída do build fica em `distribuicao`.
 
-## Publicar
-
-O repositório usa GitHub e a hospedagem usa Vercel. O arquivo `vercel.json` define a instalação, a compilação e a pasta de saída. As instruções estão em [Publicação](documentacao/publicacao.md).
-
 ## Dados e limites
 
 Os dados ficam no navegador e não são sincronizados entre dispositivos. Cartão completo e código de segurança não são salvos. Campanhas dependem de uma escolha opcional, que pode ser revogada. A sessão encerra após 20 minutos sem interação.
